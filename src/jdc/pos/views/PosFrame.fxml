@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox prefHeight="700.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jdc.pos.views.PosFrame">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="upload" mnemonicParsing="false" onAction="#upload" text="Upload">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="F4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+               <accelerator>
+                  <KeyCodeCombination alt="UP" code="F" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="564.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="80.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="title" text="POS Home">
+               <styleClass>
+                  <String fx:value="font-style" />
+                  <String fx:value="fs26" />
+                  <String fx:value="text-white" />
+               </styleClass>
+            </Label>
+            <HBox fx:id="box" alignment="CENTER" GridPane.columnIndex="1">
+               <children>
+                  <SVGPath fx:id="icon" content="M14.286 34.286c0 1.563-1.295 2.857-2.857 2.857s-2.857-1.295-2.857-2.857 1.295-2.857 2.857-2.857 2.857 1.295 2.857 2.857zM34.286 34.286c0 1.563-1.295 2.857-2.857 2.857s-2.857-1.295-2.857-2.857 1.295-2.857 2.857-2.857 2.857 1.295 2.857 2.857zM37.143 10v11.429c0 0.714-0.558 1.339-1.272 1.429l-23.304 2.723c0.112 0.513 0.29 1.027 0.29 1.563 0 0.513-0.313 0.982-0.536 1.429h20.536c0.781 0 1.429 0.647 1.429 1.429s-0.647 1.429-1.429 1.429h-22.857c-0.781 0-1.429-0.647-1.429-1.429 0-0.692 1.004-2.366 1.362-3.058l-3.951-18.371h-4.554c-0.781 0-1.429-0.647-1.429-1.429s0.647-1.429 1.429-1.429h5.714c1.496 0 1.54 1.786 1.763 2.857h26.808c0.781 0 1.429 0.647 1.429 1.429z" fill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </SVGPath>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="color-primary" />
+            <String fx:value="height-100" />
+            <String fx:value="pd-20V40H" />
+         </styleClass>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </GridPane>
+      <StackPane fx:id="container" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Label fx:id="message" text="Message from Appliation">
+               <styleClass>
+                  <String fx:value="text-white" />
+                  <String fx:value="fs14" />
+                  <String fx:value="font-style" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="height-50" />
+            <String fx:value="al-left" />
+            <String fx:value="color-primary" />
+            <String fx:value="pd-20" />
+         </styleClass>
+      </HBox>
+   </children>
+</VBox>

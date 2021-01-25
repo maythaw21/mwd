@@ -1,0 +1,148 @@
+.color-primary {
+	-fx-background-color: #051540;
+}
+
+.color-accent {
+	
+}
+
+.font-style {
+	-fx-font-family: "Arial Unicode MS";
+}
+
+.sp-40 {
+	-fx-spacing: 40;
+}
+
+.fs26 {
+	-fx-font-size: 26;
+}
+
+.fs22 {
+	-fx-font-size: 22;
+}
+	
+.fs30 {
+	-fx-font-size: 30;
+}
+
+.fs14 {
+	-fx-font-size: 14;
+}
+
+.fs16 {
+	-fx-font-size: 16;
+}
+
+.fs18 {
+	-fx-font-size: 18;
+}
+
+.height-120 {
+	-fx-pref-height: 120;
+}
+
+.btn-style {
+	-fx-background-color: #5C628C;
+	-fx-text-fill: white;
+	-fx-cursor: hand;
+}
+
+.height-100 {
+	-fx-pref-height: 100;
+}
+
+.height-80 {
+	-fx-pref-height: 80;
+}
+
+.height-30 {
+	-fx-pref-height: 30;
+}
+
+.height-50 {
+	-fx-pref-height: 50;
+}
+
+.text-white {
+	-fx-text-fill: white;
+}
+
+.text-red {
+	-fx-text-fill: brown;
+}
+
+.sp-10 {
+	-fx-spacing: 10px;
+}
+
+.sp-15 {
+	-fx-spacing: 15px;
+}
+
+.height-search {
+	-fx-pref-height: 50;
+}
+
+.wd-btn {
+	-fx-pref-width: 80;
+}
+
+.wd {
+	-fx-pref-width: 120;
+}
+
+.pd-20 {
+	-fx-padding: 20 20 20 20;
+}
+
+.pd-20V40H {
+	-fx-padding: 20 40 20 40;
+}
+
+.pd-20H {
+	-fx-padding: 0 20 0 20;
+}
+
+.al-left {
+	-fx-alignment: center-left;
+}
+
+.al-btm-left {
+	-fx-alignment: bottom-left;
+}
+
+.al-btm-right {
+	-fx-alignment: bottom-right;
+}
+
+.al-right {
+	-fx-alignment: center-right;
+}
+
+.al-center {
+	-fx-alignment: center;
+}
+
+.GridPane Label {
+	-fx-font-size: 18;
+}
+
+.text-field {
+	-fx-background-radius: 0;
+}
+
+.button {
+	-fx-background-color: #394159;
+	-fx-background-radius: 3;
+	-fx-cursor: hand;
+	-fx-text-fill: white;
+}
+
+
+
+
+
+
+
+
